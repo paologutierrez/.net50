@@ -1,0 +1,21 @@
+```
+  public class MyClass
+  {
+      public void MyMethod()
+      {
+  
+          //GetData fetches data from the database using a SQL query
+          DataTable dt = DataAccess.GetData();
+          foreach (DataRow row in dt.Rows)
+          {
+              //Accessing data through column index
+              int empId = Convert.ToInt32(row[0]);
+          }
+      }
+  }
+  
+```
+
+
+
+

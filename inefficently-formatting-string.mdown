@@ -1,0 +1,3 @@
+```
+  string updateQueryText = "UPDATE EmployeeTable SET Name='" + name + "' WHERE EmpId=" + id;
+```

@@ -1,0 +1,20 @@
+```
+  public bool CheckIfNumeric(string value)
+  {
+      bool isNumeric = true;
+      try
+      {
+          int i = Convert.ToInt32(value);
+      }
+      catch(FormatException exception)
+      {
+          isNumeric = false;
+      }
+      return isNumeric;
+  }
+
+```
+
+
+
+

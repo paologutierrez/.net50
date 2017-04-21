@@ -1,0 +1,26 @@
+```
+  static void Main(string[] args)
+  {
+      
+      MyAccount account = new MyAccount();
+      //The caller is able to set the value which is unexpected
+      account.AccountNumber = "YYYYYYYYYYYYYY";
+  
+      Console.ReadKey();    
+  }
+  
+  public class MyAccount
+  {
+      public string AccountNumber;
+  
+      public MyAccount()
+      {
+          AccountNumber = "XXXXXXXXXXXXX";
+      }
+  
+  
+```
+
+
+
+

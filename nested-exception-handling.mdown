@@ -1,0 +1,45 @@
+```
+  public class NestedExceptionHandling
+  {
+      public void MainMethod()
+      {
+          try
+          {
+              //some implementation
+              ChildMethod1();
+          }
+          catch (Exception exception)
+          {
+              //Handle exception
+          }
+      }
+  
+      private void ChildMethod1()
+      {
+          try
+          {
+              //some implementation
+              ChildMethod2();
+          }
+          catch (Exception exception)
+          {
+              //Handle exception
+  	     throw;
+  
+          }
+      }
+  
+      private void ChildMethod2()
+      {
+          try
+          {
+              //some implementation
+          }
+          catch (Exception exception)
+          {
+              //Handle exception
+              throw;
+          }
+      }
+  }
+```

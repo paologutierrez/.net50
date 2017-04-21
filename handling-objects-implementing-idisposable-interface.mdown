@@ -1,0 +1,26 @@
+```
+  public void DALMethod()
+  {
+      SqlConnection connection = null;
+      try
+      {
+          connection = new SqlConnection("XXXXXXXXXX");
+          connection.Open();
+          //implement the data access
+      }
+      catch (Exception exception)
+      {
+          //handle exception
+      }
+      finally
+      {
+          connection.Close();
+          connection.Dispose();
+      }
+  }
+  
+```
+
+
+
+

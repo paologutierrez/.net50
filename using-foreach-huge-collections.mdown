@@ -1,0 +1,27 @@
+```
+static void Main(string[] args)
+{
+  DataTable dt = PopulateData();
+  Stopwatch watch = new Stopwatch();
+
+  //For loop
+  watch.Start();
+  for (int count = 0; count < dt.Rows.Count; count++)
+  {
+      dt.Rows[count]["Name"] = "Modified in For";
+  }
+  watch.Stop();
+  Console.WriteLine("Time taken in For loop: {0}", watch.Elapsed.TotalSeconds);
+
+  //Foreach loop
+  watch.Start();
+  foreach (DataRow row in dt.Rows)
+  {
+      row["Name"] = "Modified in ForEach";
+  }
+  watch.Stop();
+  Console.WriteLine("Time taken in For Each loop: {0}", watch.Elapsed.TotalSeconds);
+
+  Console.ReadKey();
+}
+```

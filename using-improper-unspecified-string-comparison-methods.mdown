@@ -1,0 +1,4 @@
+```
+  public bool Equals(string value);
+  public bool Equals(string value, StringComparison comparisonType);
+```

@@ -1,0 +1,15 @@
+```
+  string val = null;
+  int value = int.Parse(str); //Will throw ArgumentNullException
+
+  string val = "100.11";
+  int value = int.Parse(val); //Will throw FormatException
+
+  string val = "999999999999999999999999999999999999999999";
+  int value = int.Parse(val); //Will throw OverflowException››
+
+```
+
+
+
+

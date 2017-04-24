@@ -1,0 +1,16 @@
+```
+  var list = new List<int>();
+
+  var dictionary = new Dictionary<int, Customer>();
+
+  var hashSet = new HashSet<int>();
+
+  var stack = new Stack<string>();
+
+  var queue = new Queue<string>();
+
+```
+
+
+
+
